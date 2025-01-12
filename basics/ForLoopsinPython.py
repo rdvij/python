@@ -18,3 +18,6 @@ def doForloop():
         print(char)
 
 print(varString.upper())
+
+#Iterate over a list using while loop
+listOfNumbers = [1, 2, 3, 4, 5]

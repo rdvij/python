@@ -25,7 +25,7 @@ with open("QuestionsandAnswers.csv", "r") as file:
 
 score = 0
 
-startOfGame = """
+startOfGameMessage = """
 Welcome to the KBC game. \nYou will be asked 5 questions, each with 4 options, and you have to choose the correct option.
 \nFor each correct answer, you will get 1 point, and for each wrong answer, you will lose 1 point.
 \nMake sure to enter the option number (1, 2, 3, or 4) as your answer.
@@ -34,7 +34,7 @@ Welcome to the KBC game. \nYou will be asked 5 questions, each with 4 options, a
 ***** Let's start the game! *****
 """
 
-print(startOfGame)
+print(startOfGameMessage)
 
 i = 0
 while i < 5:
