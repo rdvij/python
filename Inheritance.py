@@ -12,9 +12,11 @@ class Manager(Employee):
         super().__init__(name, salary)
         self.team = team
         self.developers = developers
+        self.__secretName = team + "_" + name
 
     def display(self):
         super().display()
+        print("Secret Name: ", self.__secretName)
 
         print("Team: ", self.team)
         print("Developers: ")
@@ -54,11 +56,13 @@ class SeniorDeveloper(Developer):
 Developer1 = JuniorDeveloper("Raj", 50000, "MFX", 5)
 Developer2 = SeniorDeveloper("Jane", 100000, "MFX", 9)
 
-print(type(Developer1))
-print(type(Developer2))
-print(Developer1.type())
+#print(type(Developer1))
+#print(type(Developer2))
+#print(Developer1.type())
 
-listOfDevelopers = [Developer1, Developer2]
 Manager1 = Manager("John", 90000, "MFX", Developer1, Developer2)
 
+#print(Manager1.__secretName)
+Manager1.__secretName = "modified"
+print("*** " + Manager1.__secretName + " ***")
 Manager1.display()
