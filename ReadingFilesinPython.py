@@ -5,5 +5,3 @@ with open('Rahul_Resume.pdf', 'rb') as file:
         if not line or len(line) == 0:
             break
         print(line)
-
-        
