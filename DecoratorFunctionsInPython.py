@@ -56,7 +56,6 @@ def multiply(a, b):
 tuple = (2, 3)
 dict = {'a': 2, 'b': 3}
 
-
 my_decorator_withargs(multiply)(tuple[0], tuple[1])
 
 my_decorator_withargs(multiply)(**dict)
